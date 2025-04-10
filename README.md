@@ -37,11 +37,15 @@
  * int yylength(): método que retorna o comprimento da sequência de caracteres que foi casada com a regra.
  */
 
-/* Definição: seção para código do usuário. */
+/* 
+ * Definição: seção para código do usuário. 
+ */
 
 %%
 
-/* Opções e Declarações: seção para diretivas e macros. */
+/* 
+ * Opções e Declarações: seção para diretivas e macros. 
+ */
 
 // Diretivas:
 %standalone         // Execução independente do analisador sintático.
@@ -50,25 +54,47 @@
 %class Scanner      // Troca o nome da classe Yylex para Scanner.
 
 %{
-    public String getLexema() {
-        return yytext(); // Apenas retorna o valor de yytext().
-    }
+
+  public void imprimir(int linha, int coluna, String lexema, String descricao) {
+    System.out.println("[" + linha + "]" + "[" + coluna + "] " + lexema + ": " + descricao + ".");
+  }
+
+  public void dispararExcecao(int linha, int coluna, String lexema, String descricao) {
+    imprimir(linha, coluna, lexema, descricao);
+    throw new RuntimeException(descricao + ": " + yytext() + "");
+  }
+
 %}
 
 // Macros:
-letra = [a-zA-Z]
-numero = [0-9]
-digito = {numero}+
-identificador = {letra}({letra}|{numero})*
+BRANCO = [\n| |\t|\r]
+PONTOEVIRGULA = ";"
+ABREPARENTESE = "("
+FECHAPARENTESE = ")"
+SOMA = "+"
+ATRIBUICAO = "="
+COMPARACAO = "=="
+INTEIRO = 0|[1-9][0-9]*
+ID = [_|a-z|A-Z][a-z|A-Z|0-9|_]*
 
 %%
 
-/* Regras e Ações Associadas: seção de instruções para 
+/*  
+ * Regras e Ações Associadas: seção de instruções para
  * o analisador léxico. 
  */
-
-{digito}        {System.out.println(" -> Encontrei um <Token: DIGITO, Lexema: "        + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
-{identificador} {System.out.println(" -> Encontrei um <Token: IDENTIFICADOR, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
+{ABREPARENTESE}  { imprimir(yyline, yycolumn, yytext(), "Abre parêntese"); }
+{FECHAPARENTESE} { imprimir(yyline, yycolumn, yytext(), "Fecha parêntese"); }
+{PONTOEVIRGULA}  { imprimir(yyline, yycolumn, yytext(), "Ponto e vírgula"); }
+{ATRIBUICAO}     { imprimir(yyline, yycolumn, yytext(), "Atribuição"); }
+{COMPARACAO}     { imprimir(yyline, yycolumn, yytext(), "Comparação"); }   
+"if"             { imprimir(yyline, yycolumn, yytext(), "Palavra reservada if"); }
+"then"           { imprimir(yyline, yycolumn, yytext(), "Palavra reservada then"); }
+{BRANCO}         { imprimir(yyline, yycolumn, yytext(), "Espaço em branco"); }
+{ID}             { imprimir(yyline, yycolumn, yytext(), "Identificador"); }
+{SOMA}           { imprimir(yyline, yycolumn, yytext(), "Operador de soma"); }
+{INTEIRO}        { imprimir(yyline, yycolumn, yytext(), "Número inteiro"); }
+.                { dispararExcecao(yyline, yycolumn, yytext(), "Caracter inválido"); }
 </pre>
 
 ## Arquivo: entrada01.txt:
