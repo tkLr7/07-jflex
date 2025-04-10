@@ -1,0 +1,2 @@
+[0][0] <: Caracter inválido.
+Unexpected exception:

@@ -1,0 +1,40 @@
+[0][0] soma: Identificador.
+[0][4]  : Espaço em branco.
+[0][5] =: Atribuição.
+[0][6]  : Espaço em branco.
+[0][7] num1: Identificador.
+[0][11]  : Espaço em branco.
+[0][12] +: Operador de soma.
+[0][13]  : Espaço em branco.
+[0][14] num2: Identificador.
+[0][18] ;: Ponto e vírgula.
+[0][19] 
+: Espaço em branco.
+[1][0] if: Palavra reservada if.
+[1][2] (: Abre parêntese.
+[1][3] soma: Identificador.
+[1][7]  : Espaço em branco.
+[1][8] ==: Comparação.
+[1][10]  : Espaço em branco.
+[1][11] 7: Número inteiro.
+[1][12] ): Fecha parêntese.
+[1][13]  : Espaço em branco.
+[1][14] then: Palavra reservada then.
+[1][18] 
+: Espaço em branco.
+[2][0]  : Espaço em branco.
+[2][1]  : Espaço em branco.
+[2][2] soma: Identificador.
+[2][6]  : Espaço em branco.
+[2][7] =: Atribuição.
+[2][8]  : Espaço em branco.
+[2][9] soma: Identificador.
+[2][13]  : Espaço em branco.
+[2][14] +: Operador de soma.
+[2][15]  : Espaço em branco.
+[2][16] 3: Número inteiro.
+[2][17] ;: Ponto e vírgula.
+[2][18] 
+: Espaço em branco.
+[3][0] <: Caracter inválido.
+Unexpected exception:
