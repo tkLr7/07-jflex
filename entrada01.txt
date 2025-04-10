@@ -1,0 +1,4 @@
+soma = num1 + num2;
+if(soma == 7) then
+  soma = soma + 3;
+<
