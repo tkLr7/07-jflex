@@ -1,0 +1,8 @@
+delta := b * b - 4 * a * c;
+if delta < 0 then
+writeln ('Nao tem raizes reais')
+else begin
+x1 := (-b + sqrt (delta)) / (2*a);
+x2 := (-b - sqrt (delta)) / (2*a);
+writeln ('As raizes sao ', x1, ' e ', x2);
+end;

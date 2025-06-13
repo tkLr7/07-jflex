@@ -1,0 +1,139 @@
+[0][0] delta: Identificador.
+[0][5]  : Espaço em branco.
+[0][6] :=: Atribuição.
+[0][8]  : Espaço em branco.
+[0][9] b: Identificador.
+[0][10]  : Espaço em branco.
+[0][11] *: Operador de multiplicacao.
+[0][12]  : Espaço em branco.
+[0][13] b: Identificador.
+[0][14]  : Espaço em branco.
+[0][15] -: Operador de subtração.
+[0][16]  : Espaço em branco.
+[0][17] 4: Número inteiro.
+[0][18]  : Espaço em branco.
+[0][19] *: Operador de multiplicacao.
+[0][20]  : Espaço em branco.
+[0][21] a: Identificador.
+[0][22]  : Espaço em branco.
+[0][23] *: Operador de multiplicacao.
+[0][24]  : Espaço em branco.
+[0][25] c: Identificador.
+[0][26] ;: Ponto e vírgula.
+[0][27] 
+: Espaço em branco.
+[1][0] if: Palavra reservada if.
+[1][2]  : Espaço em branco.
+[1][3] delta: Identificador.
+[1][8]  : Espaço em branco.
+[1][9] <: Menor.
+[1][10]  : Espaço em branco.
+[1][11] 0: Número inteiro.
+[1][12]  : Espaço em branco.
+[1][13] then: Palavra reservada then.
+[1][17] 
+: Espaço em branco.
+[2][0] writeln: Palavra reservada writeln.
+[2][7]  : Espaço em branco.
+[2][8] (: Abre parêntese.
+[2][9] ': Apostrofo.
+[2][10] Nao: Identificador.
+[2][13]  : Espaço em branco.
+[2][14] tem: Identificador.
+[2][17]  : Espaço em branco.
+[2][18] raizes: Identificador.
+[2][24]  : Espaço em branco.
+[2][25] reais: Identificador.
+[2][30] ': Apostrofo.
+[2][31] ): Fecha parêntese.
+[2][32] 
+: Espaço em branco.
+[3][0] else: Palavra reservada else.
+[3][4]  : Espaço em branco.
+[3][5] begin: Palavra reservada begin.
+[3][10] 
+: Espaço em branco.
+[4][0] x1: Identificador.
+[4][2]  : Espaço em branco.
+[4][3] :=: Atribuição.
+[4][5]  : Espaço em branco.
+[4][6] (: Abre parêntese.
+[4][7] -: Operador de subtração.
+[4][8] b: Identificador.
+[4][9]  : Espaço em branco.
+[4][10] +: Operador de soma.
+[4][11]  : Espaço em branco.
+[4][12] sqrt: Operador de Raiz quadrada.
+[4][16]  : Espaço em branco.
+[4][17] (: Abre parêntese.
+[4][18] delta: Identificador.
+[4][23] ): Fecha parêntese.
+[4][24] ): Fecha parêntese.
+[4][25]  : Espaço em branco.
+[4][26] /: Operador de divisao.
+[4][27]  : Espaço em branco.
+[4][28] (: Abre parêntese.
+[4][29] 2: Número inteiro.
+[4][30] *: Operador de multiplicacao.
+[4][31] a: Identificador.
+[4][32] ): Fecha parêntese.
+[4][33] ;: Ponto e vírgula.
+[4][34] 
+: Espaço em branco.
+[5][0] x2: Identificador.
+[5][2]  : Espaço em branco.
+[5][3] :=: Atribuição.
+[5][5]  : Espaço em branco.
+[5][6] (: Abre parêntese.
+[5][7] -: Operador de subtração.
+[5][8] b: Identificador.
+[5][9]  : Espaço em branco.
+[5][10] -: Operador de subtração.
+[5][11]  : Espaço em branco.
+[5][12] sqrt: Operador de Raiz quadrada.
+[5][16]  : Espaço em branco.
+[5][17] (: Abre parêntese.
+[5][18] delta: Identificador.
+[5][23] ): Fecha parêntese.
+[5][24] ): Fecha parêntese.
+[5][25]  : Espaço em branco.
+[5][26] /: Operador de divisao.
+[5][27]  : Espaço em branco.
+[5][28] (: Abre parêntese.
+[5][29] 2: Número inteiro.
+[5][30] *: Operador de multiplicacao.
+[5][31] a: Identificador.
+[5][32] ): Fecha parêntese.
+[5][33] ;: Ponto e vírgula.
+[5][34] 
+: Espaço em branco.
+[6][0] writeln: Palavra reservada writeln.
+[6][7]  : Espaço em branco.
+[6][8] (: Abre parêntese.
+[6][9] ': Apostrofo.
+[6][10] As: Identificador.
+[6][12]  : Espaço em branco.
+[6][13] raizes: Identificador.
+[6][19]  : Espaço em branco.
+[6][20] sao: Identificador.
+[6][23]  : Espaço em branco.
+[6][24] ': Apostrofo.
+[6][25] ,: Concatenacao.
+[6][26]  : Espaço em branco.
+[6][27] x1: Identificador.
+[6][29] ,: Concatenacao.
+[6][30]  : Espaço em branco.
+[6][31] ': Apostrofo.
+[6][32]  : Espaço em branco.
+[6][33] e: Identificador.
+[6][34]  : Espaço em branco.
+[6][35] ': Apostrofo.
+[6][36] ,: Concatenacao.
+[6][37]  : Espaço em branco.
+[6][38] x2: Identificador.
+[6][40] ): Fecha parêntese.
+[6][41] ;: Ponto e vírgula.
+[6][42] 
+: Espaço em branco.
+[7][0] end: Palavra reservada end.
+[7][3] ;: Ponto e vírgula.
